@@ -120,6 +120,8 @@ form div.field-icon label {
 
 form div.field-icon input { border: none; background: transparent; width: calc(100% - 35px); height: inherit; }
 
+form input { padding-left: 10px; box-sizing: border-box; }
+
 /**
  * Formulário [ Field com label superior ]
  * =========================================================
@@ -195,3 +197,42 @@ header .container-image-header img { width: 100%; height: 100%; border-radius: 5
 
 #sidebar ul { width: inherit; height: 60px; border-bottom: 1px solid var( --secondaryColor );}
 #sidebar a { float: left; line-height: 60px; color: white; }
+
+
+/**
+ * Página De Consulta da API
+ * =========================================================
+ */
+h2 {
+    text-align: center;
+    line-height: 100px;
+    color: white;
+}
+
+#container-form {
+    background-color: #4b4b4b;
+
+    position: absolute;
+    width: 400px;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+#container-form input {
+    color: white;
+}
+
+#container-result {
+    background-color: blue;
+    background-color: #979696;
+
+    position: absolute;
+    width: calc(100% - 400px);
+    height: 100%;
+    top: 0;
+    right: 0;
+
+    padding: 20px;
+    box-sizing: border-box;
+}

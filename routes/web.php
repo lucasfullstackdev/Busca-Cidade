@@ -15,4 +15,5 @@ Route::prefix('login')->group(function(){
  * Rotas para Dashboard
  * ===============================================================
  */
-Route::get('/bolsa-familia', 'BolsaFamiliaController@index')->name('bolsa-familia.index');
+Route::get('/dashboard', 'DashboardController@index')->name('dashboard.index');
+Route::post('/dashboard', 'DashboardController@search')->name('dashboard.search');
