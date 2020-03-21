@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="{{ asset('css/main.stylesheet.css') }}">
-    
+
     @stack('styles')
 
     <title>Portal da transparência - @yield('title') </title>
@@ -19,6 +19,7 @@
     <section id="container-content" class="flex-center">
         @yield('content')
     </section>
+
 
 </body>
 </html>

@@ -16,6 +16,11 @@ class LoginController extends Controller
         return view('admin.pages.login.index');
     }
 
+    public function auth()
+    {
+        return redirect()->route('admin.dashboard');
+    }
+
     /**
      * Show the form for creating a new resource.
      *

@@ -6,8 +6,6 @@
 
 @section('title', 'Login')
 
-
-
 @section('content')
     
     <section id="container-login" class="border-box">
@@ -17,7 +15,7 @@
 
         <h1>Portal da transparência</h1>
 
-        <form action="">
+        <form action="{{ route('login.index') }}" method="post">
             @csrf
 
             <div class="field-icon">
