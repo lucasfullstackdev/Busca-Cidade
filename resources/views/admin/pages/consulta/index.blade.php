@@ -4,26 +4,28 @@
     
     <section div="container-api">
         <div id="container-form">
-            <h2>Escolha a cidade</h2>
+            <h4>Escolha a cidade</h4>
             <form action="{{ route('consulta.search') }}" method="post">
                 @csrf
 
                 <div class="field-icon">
                     <label><i class="fa fa-globe"></i></label>
-                    <input type="text" placeholder="Código IBGE" name="ibgeCode" value="3550308">
+                    <input type="text" placeholder="Código IBGE" name="ibgeCode" id="ibgeCode">
                 </div>
 
                 <div class="field-icon">
                     <label><i class="fa fa-calendar"></i></label>
-                    <input type="month" name="dateReference" placeholder="Data de Referência" value="2019-05">
+                    <input type="month" name="dateReference" placeholder="Data de Referência">
                 </div>
 
                 <div class="container-button">
                     <button type="submit" class="btn btn-info">Consultar</button>
                 </div>
-
             </form>
 
+            <div class="container-about-project">
+                <a class="about-project text-light">About this project &nbsp;&nbsp;<i class="fa fa-info-circle"></i></a>
+            </div>
         </div>
 
         @isset($modals)

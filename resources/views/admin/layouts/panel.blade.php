@@ -27,47 +27,11 @@
         <div class="container-icon">
             <i class="fa fa-bars"></i>
         </div>
-
-        <h5> Portal da Transferência - API </h5>
-
-        <div class="container-image-header">
-            <img src="{{ asset('images/user.jpg') }}" alt="">
-        </div>
+        <h5> Acesso a Dados públicos de cidades </h5>
     </header>
 
-    {{-- <nav id="sidebar">
-        <ul>
-            <li>
-                <div class="container-icon">
-                    <i class="fa fa-bars"></i>
-                </div>
-                <a href="">Bolsa Família</a>
-            </li>
-        </ul>
-        
-        <ul>
-            <li>
-                <div class="container-icon">
-                    <i class="fa fa-bars"></i>
-                </div>
-                <a href="">Despesas Públicas</a>
-            </li>
-        </ul>
-
-        <ul>
-            <li>
-                <div class="container-icon">
-                    <i class="fa fa-bars"></i>
-                </div>
-                <a href="">Viagens a Serviço</a>
-            </li>
-        </ul>
-    </nav> --}}
-
     <section id="container-content" class="flex-center panel">
-        
         @yield('content')
-
     </section>
     
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>

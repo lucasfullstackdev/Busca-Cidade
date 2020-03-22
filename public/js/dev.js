@@ -9,8 +9,4 @@ $(document).ready( () => {
     }
 
     btnMenu.on('click', () => sidebarToggle() );
-
-    $('.info-municipio').popover({
-        container: 'body'
-    });
 });
