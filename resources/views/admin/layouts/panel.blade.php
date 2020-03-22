@@ -35,7 +35,7 @@
         </div>
     </header>
 
-    <nav id="sidebar">
+    {{-- <nav id="sidebar">
         <ul>
             <li>
                 <div class="container-icon">
@@ -62,7 +62,7 @@
                 <a href="">Viagens a Serviço</a>
             </li>
         </ul>
-    </nav>
+    </nav> --}}
 
     <section id="container-content" class="flex-center panel">
         

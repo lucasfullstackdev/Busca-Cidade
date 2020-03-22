@@ -26,22 +26,11 @@
 
         </div>
 
-        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLongTitle">Informações Importantes</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                    
-                </div>
-              </div>
-            </div>
-          </div>
-
+        @isset($modals)
+            @foreach ($modals as $modal)
+                @include('admin.components.modal', $modal )   
+            @endforeach
+        @endisset
 
         <div id="container-result" class="card-columns" style=" display: inline-block; column-break-inside: avoid; ">
                 @isset($bolsaFamilia)
@@ -57,7 +46,7 @@
                             <footer class="blockquote-footer">
                                 Dados da API pública do
                                 <cite title="Source Title">IBGE</cite>
-                                <i class="fa fa-info-circle text-info info-municipio" data-toggle="modal" data-target="#exampleModalCenter" style="float: right; font-size: 20px;"></i>
+                                <i class="fa fa-info-circle text-info info-municipio" data-toggle="modal" data-target="#modalDadosMunicipio" style="float: right; font-size: 20px;"></i>
                             </footer>
                         </div>
                     </div>
@@ -65,7 +54,7 @@
                     <div class="card border-secondary">
                         <div class="card-header">
                             {{ $bolsaFamilia->tipo->descricao }}
-                            <small class="text-muted" style="float: right;">Data de Referência: {{ $bolsaFamilia->dataReferencia }}</small>
+                            <small class="text-muted" style="float: right;">Data de ref.: {{ $bolsaFamilia->dataReferencia }}</small>
                         </div>
                         <div class="card-body">
                             <blockquote class="blockquote mb-0">
@@ -77,7 +66,7 @@
                             <footer class="blockquote-footer">
                                 Dados da API pública do
                                 <cite title="Source Title">IBGE</cite>
-                                <i class="fa fa-info-circle text-info" style="float: right; font-size: 20px;"></i>
+                                <i class="fa fa-info-circle text-info info-municipio" data-toggle="modal" data-target="#modalDadosMunicipio" style="float: right; font-size: 20px;"></i>
                             </footer>
                         </div>
                     </div>
@@ -99,7 +88,7 @@
                             <footer class="blockquote-footer">
                                 Dados da API pública do
                                 <cite title="Source Title">IBGE</cite>
-                                <i class="fa fa-info-circle text-info" style="float: right; font-size: 20px;"></i>
+                                <i class="fa fa-info-circle text-info info-municipio" data-toggle="modal" data-target="#modalNomesPorMunicipio" style="float: right; font-size: 20px;"></i>
                             </footer>
                         </div>
                     </div>
@@ -121,7 +110,7 @@
                             <footer class="blockquote-footer">
                                 API pública do
                                 <cite title="Source Title">educacao.dadosabertosbr</cite>
-                                <i class="fa fa-info-circle text-info" style="float: right; font-size: 20px;"></i>
+                                <i class="fa fa-info-circle text-info info-municipio" data-toggle="modal" data-target="#modalEscolasPorMunicipio" style="float: right; font-size: 20px;"></i>
                             </footer>
                         </div>
                     </div>
@@ -143,7 +132,7 @@
                             <footer class="blockquote-footer">
                                 Dados da API pública do
                                 <cite title="Source Title">IBGE</cite>
-                                <i class="fa fa-info-circle text-info" style="float: right; font-size: 20px;"></i>
+                                <i class="fa fa-info-circle text-info info-municipio" data-toggle="modal" data-target="#modalDistritos" style="float: right; font-size: 20px;"></i>
                             </footer>
                         </div>
                     </div>
@@ -151,7 +140,7 @@
 
                 @isset($ibgeProjecao)
                     <div class="card border-secondary">
-                        <div class="card-header">Projeção<small class="text-muted" style="float: right;">Data de Referência: {{ $ibgeProjecao->horario }}</small></div>
+                        <div class="card-header">Projeção<small class="text-muted" style="float: right;">Data de ref.: {{ $ibgeProjecao->horario }}</small></div>
                         <div class="card-body" style="overflow: auto; max-height:  170px;">
                             <blockquote class="blockquote mb-0">
                                 <p class="card-text">Região: {{ $ibgeProjecao->regiaoSigla }} - {{ $ibgeProjecao->regiaoNome }}</p>
@@ -165,7 +154,7 @@
                             <footer class="blockquote-footer">
                                 API pública do
                                 <cite title="Source Title">IBGE</cite>
-                                <i class="fa fa-info-circle text-info" style="float: right; font-size: 20px;"></i>
+                                <i class="fa fa-info-circle text-info info-municipio" data-toggle="modal" data-target="#modalProjecaoIbge" style="float: right; font-size: 20px;"></i>
                             </footer>
                         </div>
                     </div>
@@ -174,20 +163,3 @@
     </section>
 
 @endsection
-
-{{-- 
-
-Nenhum dado aqui exibido foi gravado em banco de dados privado, log ou qualquer outro meio.
-Esta aplicação não se responsabiliza pela vericidade dos dados e pela atualização dos mesmos.
-Toda e qualquer informação aqui exibida está livre de manipulação de seu conteúdo, ficando livre apenas a manipulação e formatação de valores monetários, afim de garantir sua legibilidade, sendo vedada a alteração de seu valor.
-
-Todas as api's utilizadas aqui são publicas e seguem:
-
-[DECRETO Nº 8.777, DE 11 DE MAIO DE 2016], o qual institui a Política de Dados Abertos do Poder Executivo Federal.
-[LEI Nº 12.527, DE 18 DE NOVEMBRO DE 2011.], a qual regula o acesso a informações.
-
-Esta aplicação segue:
-
-[LEI Nº 9.610, DE 19 DE FEVEREIRO DE 1998], lei que altera, atualiza e consolida a legislação sobre direitos autorais e dá outras providências.
-    
---}}

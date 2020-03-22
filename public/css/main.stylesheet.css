@@ -180,7 +180,7 @@ header .container-image-header img { width: 100%; height: 100%; border-radius: 5
  * Sidebar
  * =========================================================
  */
-#sidebar {
+/* #sidebar {
     position: absolute;
 
     height: calc(100% - 60px);
@@ -196,7 +196,7 @@ header .container-image-header img { width: 100%; height: 100%; border-radius: 5
 }
 
 #sidebar ul { width: inherit; height: 60px; border-bottom: 1px solid var( --secondaryColor );}
-#sidebar a { float: left; line-height: 60px; color: white; }
+#sidebar a { float: left; line-height: 60px; color: white; } */
 
 
 /**
@@ -246,38 +246,17 @@ h2 {
  */
 
 .card p.card-text { font-size: 15px !important; }
-/* 
-.container-card {
-    float: left;
 
-    max-width: 400px;
-    width: calc(100%/3);
-    height: auto;
 
-    flex-wrap: wrap;
 
-    padding: 10px;
-    box-sizing: border-box;
-}
 
-div.container-card.large { width: 66.66%; max-width: 900px; }
+/**
+ * Controle de exibição do formulário para pesquisa
+ * =========================================================
+ */
+#container-form,
+#container-result, 
+.fullScreen { transition: all 0.3s ease-in; }
 
-.container-card .card {
-    background-color: white;
-    padding: 20px;
-    box-shadow: 0px 0px 5px 1px rgba(155,155,155,1);
-}
-
-.container-card .card h2 { line-height: 70px; }
-
-.container-card .card h2,
-.container-card .card ul li,
-.container-card .card p { color: var( --secondaryColor ); }
-
-.container-card .card .card-content {
-    max-height: 300px;
-    min-height: 50px;
-    height: auto;
-    overflow: auto;
-} */
-
+#container-form.fullScreen { left: -300px; }
+#container-result.fullScreen { width: 100%; }

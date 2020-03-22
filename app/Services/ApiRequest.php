@@ -51,8 +51,6 @@ class ApiRequest
             }
         }
 
-      
-
         return $response;
     }
 
