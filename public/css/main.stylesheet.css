@@ -68,7 +68,7 @@ a { color: var( --darkColor ); }
  * Formulário [ Aspectos gerais ]
  * =========================================================
  */
-form { height: 100%; padding: 20px; box-sizing: border-box; }
+form { height: auto; padding: 20px; box-sizing: border-box; }
 
 form div.field-label label,
 form div.field-icon label i { color: var( --secondaryColor ); }
@@ -213,7 +213,7 @@ h2 {
     background-color: #4b4b4b;
 
     position: absolute;
-    width: 400px;
+    width: 300px;
     height: 100%;
     top: 0;
     left: 0;
@@ -224,15 +224,60 @@ h2 {
 }
 
 #container-result {
-    background-color: blue;
-    background-color: #979696;
-
-    position: absolute;
-    width: calc(100% - 400px);
+    background-color: var( --bgColorApplication );
+    
+    width: calc(100% - 300px);
     height: 100%;
+    
+    position: absolute;
     top: 0;
     right: 0;
-
+    
     padding: 20px;
     box-sizing: border-box;
+    
+    flex-wrap: initial;
+    overflow: auto;
 }
+
+/**
+ * Página De Consulta da API [ Cards de Resultado ]
+ * =========================================================
+ */
+
+.card p.card-text { font-size: 15px !important; }
+/* 
+.container-card {
+    float: left;
+
+    max-width: 400px;
+    width: calc(100%/3);
+    height: auto;
+
+    flex-wrap: wrap;
+
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+div.container-card.large { width: 66.66%; max-width: 900px; }
+
+.container-card .card {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 0px 5px 1px rgba(155,155,155,1);
+}
+
+.container-card .card h2 { line-height: 70px; }
+
+.container-card .card h2,
+.container-card .card ul li,
+.container-card .card p { color: var( --secondaryColor ); }
+
+.container-card .card .card-content {
+    max-height: 300px;
+    min-height: 50px;
+    height: auto;
+    overflow: auto;
+} */
+

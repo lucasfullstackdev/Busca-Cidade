@@ -15,5 +15,7 @@ Route::prefix('login')->group(function(){
  * Rotas para Dashboard
  * ===============================================================
  */
-Route::get('/dashboard', 'DashboardController@index')->name('dashboard.index');
-Route::post('/dashboard', 'DashboardController@search')->name('dashboard.search');
+Route::get('/consulta', 'ConsultaController@index')->name('consulta.index');
+
+Route::post('/consulta', 'ConsultaController@search')->name('consulta.search');
+// Route::get('/consulta/{id}', 'ConsultaController@details')->name('consulta.details');
