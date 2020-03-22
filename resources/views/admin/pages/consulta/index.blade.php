@@ -22,10 +22,6 @@
                     <button type="submit" class="btn btn-info">Consultar</button>
                 </div>
             </form>
-
-            <div class="container-about-project">
-                <a class="about-project text-light">About this project &nbsp;&nbsp;<i class="fa fa-info-circle"></i></a>
-            </div>
         </div>
 
         @isset($modals)
