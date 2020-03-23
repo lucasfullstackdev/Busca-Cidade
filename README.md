@@ -21,7 +21,7 @@
 
 
 ## Sobre o projeto
-Este projeto tem como finalidade facilitar o acesso a informações públicas disponibilizadas por Órgãos e instituições da República federativa do Brasil seguindo as seguintes leis e decretos:
+Este projeto tem como finalidade facilitar o acesso às informações públicas disponibilizadas por Órgãos e instituições da República federativa do Brasil seguindo as seguintes leis e decretos:
 
 - [[DECRETO Nº 8.777, DE 11 DE MAIO DE 2016]](http://www.planalto.gov.br/ccivil_03/_ato2015-2018/2016/decreto/d8777.htm), o qual institui a Política de Dados Abertos do Poder Executivo Federal.
 - [[LEI Nº 12.527, DE 18 DE NOVEMBRO DE 2011.]](http://www.planalto.gov.br/ccivil_03/_ato2011-2014/2011/lei/l12527.htm), a qual regula o acesso a informações.
