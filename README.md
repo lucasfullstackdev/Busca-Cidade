@@ -14,15 +14,9 @@
 
 ## ScreenShots
 <p align="center">
-    <a href="https://github.com/lucasfullstackdev/City-Data-API/blob/master/public/screenshots/screen-shot-1.png" target="_blank">
-        <img src="https://github.com/lucasfullstackdev/City-Data-API/blob/master/public/screenshots/screen-shot-1.png" width="288">
-    </a>
-    <a href="https://github.com/lucasfullstackdev/City-Data-API/blob/master/public/screenshots/screen-shot-2.png">
-        <img src="https://github.com/lucasfullstackdev/City-Data-API/blob/master/public/screenshots/screen-shot-2.png" width="288">
-    </a>
-    <a href="https://github.com/lucasfullstackdev/City-Data-API/blob/master/public/screenshots/screen-shot-3.png">
-        <img src="https://github.com/lucasfullstackdev/City-Data-API/blob/master/public/screenshots/screen-shot-3.png" width="288">
-    </a>
+        <img src="https://github.com/lucasfullstackdev/City-Data-API/blob/master/public/screenshots/screen-shot-1.png" width="900">
+        <img src="https://github.com/lucasfullstackdev/City-Data-API/blob/master/public/screenshots/screen-shot-2.png" width="900">
+        <img src="https://github.com/lucasfullstackdev/City-Data-API/blob/master/public/screenshots/screen-shot-3.png" width="1000">
 </p>
 
 
